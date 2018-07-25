@@ -1,0 +1,42 @@
+{
+    "name": "alxfavela/conektapayment",
+    "description": "Laravel package for process debit and credit cards payments with Conekta",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alx Favela",
+            "email": "alex@planetoide.mx",
+            "homepage": "https://github.com/alxfavela"
+        }
+    ],
+    "homepage": "https://github.com/alxfavela/conektapayment",
+    "keywords": ["Laravel", "ConektaPayment"],
+    "require": {
+        "illuminate/support": "~5",
+        "conekta/conekta-php": "^4.0.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0",
+        "orchestra/testbench": "~3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "alxfavela\\ConektaPayment\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "alxfavela\\ConektaPayment\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AlxFavela\\ConektaPayment\\ConektaPaymentServiceProvider"
+            ],
+            "aliases": {
+                "ConektaPayment": "AlxFavela\\ConektaPayment\\Facades\\ConektaPayment"
+            }
+        }
+    }
+}
