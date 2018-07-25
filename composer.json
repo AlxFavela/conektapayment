@@ -21,12 +21,12 @@
     },
     "autoload": {
         "psr-4": {
-            "alxfavela\\ConektaPayment\\": "src/"
+            "AlxFavela\\ConektaPayment\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "alxfavela\\ConektaPayment\\Tests\\": "tests"
+            "AlxFavela\\ConektaPayment\\Tests\\": "tests"
         }
     },
     "extra": {

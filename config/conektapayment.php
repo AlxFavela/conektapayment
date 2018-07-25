@@ -12,4 +12,5 @@ return [
     */
    'api_key' => '',
    'api_version' => '2.0.0',
+   'locale' => 'es',
 ];

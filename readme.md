@@ -15,6 +15,12 @@ Via Composer
 $ composer require alxfavela/conektapayment
 ```
 
+Make sure to publish config file to your project
+
+``` bash
+php artisan vendor:publish --tag=config
+```
+
 ## Usage
 
 ## Change log
