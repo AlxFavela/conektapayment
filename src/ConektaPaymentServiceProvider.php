@@ -23,8 +23,8 @@ class ConektaPaymentServiceProvider extends ServiceProvider
 
             // Publishing the configuration file.
             $this->publishes([
-                __DIR__.'/../config/conektapayment.php' => config_path('conektapayment.php'),
-            ], 'conektapayment.config');
+                __DIR__.'/../config/conekta.php' => config_path('conekta.php'),
+            ], 'config');
 
             // Publishing the views.
             /*$this->publishes([
@@ -53,7 +53,7 @@ class ConektaPaymentServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/conektapayment.php', 'conektapayment');
+        $this->mergeConfigFrom(__DIR__.'/../config/conekta.php', 'conekta');
 
         // Register the service the package provides.
         $this->app->singleton('conektapayment', function ($app) {
